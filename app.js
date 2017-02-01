@@ -1,16 +1,23 @@
 //Script to obtain user input
 //Start Game
+
+
+// answerOne = question1();
+
+
+// console.log(userName);
+
+//Question 1
+
+function question1() {
 var toScor = 0;
 var userName = prompt('what\'s is your name?');
 
 alert('Hello ' + userName + '.  Thank you for visiting to my site!');
 
-console.log(userName);
 
-//Question 1
+var answerOne = prompt('Is Washington the \'Show Me State\'?');
 
-function question1() {
-var answerOne = prompt('Is Washington the \'Show Me State\'?').toLowerCase();
 var myAnswerOne = 'no';
 
 if (answerOne === myAnswerOne) {
@@ -21,48 +28,48 @@ if (answerOne === myAnswerOne) {
 
   alert('Sorry, that\'s wrong, try again!');
 
-  return;
-
-  }
 }
 // // Question 2
-// var answerTwo = prompt('What do I collect as a hobby?');
-// var myAnswerTwo = 'comics';
-// if (answerTwo === myAnswerTwo) {
-//   toScor += 1;
-//   alert('Right again!');
-//
-// } else {
-//
-//   alert('Sorry, that\'s wrong, maybe next time!');
-// }
-// // Qustion 3
-// var answerThree = prompt('What color is my SUV?').toLowerCase();
-// var myAnswerThree = 'tan';
-// if (answerThree === myAnswerThree) {
-//
-//   toScor += 1;
-//   alert('You are a genious, right on!');
-//
-// } else {
-//
-//   alert('Oh no, that is incorrect.');
-// }
-//
-// //Question 4
-// var answerFour = prompt('Who is Mario\'s girlfriend from Donkey Kong?')
-// var myAnswerFour = 'pauline';
-// if (answerFour === myAnswerFour) {
-//
-//   toScor += 1;
-//   alert('Way to go, that\'s right!');
-//
-//
-// } else {
-//
-//   alert('Oh no, that is incorrect.');
-// }
-//
+var answerTwo = prompt('Do you I collect comics as a hobby?');
+var myAnswerTwo = 'comics';
+if (answerTwo === myAnswerTwo) {
+  toScor += 1;
+  alert('Right again!');
+
+} else {
+
+  alert('Sorry, that\'s wrong, maybe next time!');
+}
+// Qustion 3
+var answerThree = prompt('Is the desert arid?').toLowerCase();
+var myAnswerThree = 'tan';
+if (answerThree === myAnswerThree) {
+
+  toScor += 1;
+  alert('You are a genious, right on!');
+
+} else {
+
+  alert('Oh no, that is incorrect.');
+}
+
+//Question 4
+var answerFour = prompt('Was Donkey Kong orignally called Jumpman?')
+var myAnswerFour = 'yes';
+if (answerFour === myAnswerFour) {
+
+  toScor += 1;
+  alert('Way to go, that\'s right!');
+
+
+} else {
+
+  alert('Oh no, that is incorrect.');
+}
+}
+
+question1();
+
 // // Question 5
 // var whichLang = prompt('What is my favorite programming language?');
 // var userAnswer = ['javascript', 'python', 'java', 'c'];
