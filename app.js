@@ -96,7 +96,7 @@ question1();
 var ranNum = Math.floor(Math.random() * 20) + 1;
 var countAtt = 0;
 
-while (countAtt < 4) {
+while (countAtt < 5) {
   countAtt++;
   var userNumb = prompt('Select a number between 1 - 20 (you have 4 guesses).');
 
@@ -115,7 +115,7 @@ while (countAtt < 4) {
     alert('That\'s too low, try again.');
 
   }
-  if (countAtt === 4) {
+  if (countAtt === 5) {
     alert('Sorry that was the last guess.');
   }
 }
