@@ -8,7 +8,7 @@
 // console.log(userName);
 
 //Question 1
-
+//start question1 function
 function question1() {
 var toScor = 0;
 var userName = prompt('what\'s is your name?');
@@ -67,10 +67,11 @@ if (answerFour === myAnswerFour) {
   alert('Oh no, that is incorrect.');
 }
 }
-
+//calling question1 function
 question1();
 
 // Question 5
+//start questionTwo funciton
 function questionTwo() {
 var whichLang = prompt('What is my favorite programming language?');
 var userAnswer = ['javascript', 'python', 'java', 'c'];
@@ -186,6 +187,7 @@ while (count < 6) {
 }
 console.log(arr[i]);
 }
+//call questionTwo function
 questionTwo()
 //Keep score and show user results
 if (toScor === 8) {
