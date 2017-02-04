@@ -1,16 +1,26 @@
 //Script to obtain user input
 //Start Game
 
+<<<<<<< HEAD
+=======
+
+// answerOne = question1();
+
+
+// console.log(userName);
+
+//Question 1
+
+>>>>>>> 6398e452b6ede898a220b295da7c478616e8ed61
 function question1() {
 var toScor = 0;
 var userName = prompt('what\'s is your name?');
 
 alert('Hello ' + userName + '.  Thank you for visiting to my site!');
 
-console.log(userName);
 
-//Question 1
-var answerOne = prompt('Is Washington the \'Show Me State\'?').toLowerCase();
+var answerOne = prompt('Is Washington the \'Show Me State\'?');
+
 var myAnswerOne = 'no';
 
 if (answerOne === myAnswerOne) {
@@ -22,8 +32,8 @@ if (answerOne === myAnswerOne) {
   alert('Sorry, that\'s wrong, try again!');
 
 }
-// Question 2
-var answerTwo = prompt('What do I collect as a hobby?');
+// // Question 2
+var answerTwo = prompt('Do you I collect comics as a hobby?');
 var myAnswerTwo = 'comics';
 if (answerTwo === myAnswerTwo) {
   toScor += 1;
@@ -34,7 +44,7 @@ if (answerTwo === myAnswerTwo) {
   alert('Sorry, that\'s wrong, maybe next time!');
 }
 // Qustion 3
-var answerThree = prompt('What color is my SUV?').toLowerCase();
+var answerThree = prompt('Is the desert arid?').toLowerCase();
 var myAnswerThree = 'tan';
 if (answerThree === myAnswerThree) {
 
@@ -47,8 +57,8 @@ if (answerThree === myAnswerThree) {
 }
 
 //Question 4
-var answerFour = prompt('Who is Mario\'s girlfriend from Donkey Kong?')
-var myAnswerFour = 'pauline';
+var answerFour = prompt('Was Donkey Kong orignally called Jumpman?')
+var myAnswerFour = 'yes';
 if (answerFour === myAnswerFour) {
 
   toScor += 1;
@@ -59,6 +69,27 @@ if (answerFour === myAnswerFour) {
 
   alert('Oh no, that is incorrect.');
 }
+<<<<<<< HEAD
+=======
+}
+
+question1();
+
+// Question 5
+function questionTwo() {
+var whichLang = prompt('What is my favorite programming language?');
+var userAnswer = ['javascript', 'python', 'java', 'c'];
+
+if (userAnswer.indexOf(whichLang) > -1) {
+
+  toScor += 1;
+  alert('You\'re on your way to tech greatness!');
+
+} else if (userAnswer.indexOf(whichLang) === -1) {
+  alert('Learn to code or stay in yesteryear!');
+  console.log('User score is ' + toScor + 'so far.');
+
+>>>>>>> 6398e452b6ede898a220b295da7c478616e8ed61
 }
 
 question1();
@@ -119,6 +150,7 @@ while (countAtt < 5) {
     alert('Sorry that was the last guess.');
   }
 }
+<<<<<<< HEAD
 console.log(ranNum);
 // // Question 8
 // var count = 0;
@@ -215,3 +247,103 @@ console.log(ranNum);
 //   alert('You got 0 of 8 correct, ' + userName + ' try again.');
 // }
 // console.log(toScor);
+=======
+console.log(16);
+// Question 8
+var count = 0;
+var arr = ['florida', 'new jersey', 'hawaii', 'alaska', 'virginia', 'arizona'];
+
+while (count < 6) {
+  count++;
+  var userGuess = prompt('Name a State I have lived in besides Washington. You have 6 tries.');
+
+  if(userGuess === 'florida') {
+
+    toScor += 1;
+    for (i = 0; i < arr.length; i++)
+    alert(arr[i]);
+    break;
+
+  }if (userGuess === 'new jersey') {
+
+    toScor += 1;
+    for (i = 0; i < arr.length; i++)
+    alert(arr[i]);
+    break;
+
+  }if (userGuess === 'hawaii') {
+
+    toScor += 1;
+    for (i = 0; i < arr.length; i++)
+    alert(arr[i]);
+    break;
+
+  }if (userGuess === 'alaska') {
+
+    toScor += 1;
+    for (i = 0; i < arr.length; i++)
+    alert(arr[i]);
+    break;
+
+  }if (userGuess === 'virginia') {
+
+    toScor += 1;
+    for (i = 0; i < arr.length; i++)
+    alert(arr[i]);
+    break;
+
+  }
+  if (userGuess === 'arizona') {
+
+    toScor += 1;
+    for (i = 0; i < arr.length; i++)
+    alert(arr[i]);
+    break;
+
+  }if (count === 6) {
+    for (i = 0; i < arr.length; i++)
+    alert(arr[i]);
+  }
+}
+console.log(arr[i]);
+}
+questionTwo()
+//Keep score and show user results
+if (toScor === 8) {
+
+  alert('You got 8 of 8 correct, ' + userName + ' great going!');
+
+}if (toScor === 7) {
+
+  alert('You got 7 of 8 correct, ' + userName + ' strong effort!');
+
+}if (toScor === 6) {
+
+  alert('You got 6 of 8 correct, ' + userName + ' nice try.');
+
+}if (toScor === 5) {
+
+  alert('You got 5 of 8 correct, ' + userName + ' try again.');
+
+}if (toScor === 4) {
+
+  alert('You got 4 of 8 correct, ' + userName + ' try again.');
+
+}if (toScor === 3) {
+
+  alert('You got 3 of 8 correct, ' + userName + ' try again.');
+
+}if (toScor === 2) {
+
+  alert('You got 2 of 8 correct, ' + userName + ' try again.');
+
+}if (toScor === 1) {
+
+  alert('You got 1 of 8 correct, ' + userName + ' try again.');
+
+}if (toScor === 0) {
+
+  alert('You got 0 of 8 correct, ' + userName + ' try again.');
+}
+console.log(toScor);
+>>>>>>> 6398e452b6ede898a220b295da7c478616e8ed61
