@@ -9,13 +9,12 @@
 
 //Question 1
 //start question1 function
-function question1() {
 var toScor = 0;
 var userName = prompt('what\'s is your name?');
 
+function question1() {
+
 alert('Hello ' + userName + '.  Thank you for visiting to my site!');
-
-
 var answerOne = prompt('Is Washington the \'Show Me State\'?');
 
 var myAnswerOne = 'no';
@@ -29,19 +28,21 @@ if (answerOne === myAnswerOne) {
   alert('Sorry, that\'s wrong, try again!');
 
 }
+console.log(answerOne);
 // // Question 2
 var answerTwo = prompt('Do you I collect comics as a hobby?');
-var myAnswerTwo = 'comics';
+var myAnswerTwo = 'yes';
 if (answerTwo === myAnswerTwo) {
   toScor += 1;
-  alert('Right again!');
+  alert('Right, you are a superstar!');
 
 } else {
 
   alert('Sorry, that\'s wrong, maybe next time!');
 }
+console.log(answerTwo);
 // Qustion 3
-var answerThree = prompt('Is the desert arid?').toLowerCase();
+var answerThree = prompt('What color is my SUV?').toLowerCase();
 var myAnswerThree = 'tan';
 if (answerThree === myAnswerThree) {
 
@@ -52,6 +53,7 @@ if (answerThree === myAnswerThree) {
 
   alert('Oh no, that is incorrect.');
 }
+console.log(answerThree);
 
 //Question 4
 var answerFour = prompt('Was Donkey Kong orignally called Jumpman?')
@@ -66,129 +68,130 @@ if (answerFour === myAnswerFour) {
 
   alert('Oh no, that is incorrect.');
 }
+console.log(answerFour);
 }
 //calling question1 function
 question1();
 
 // Question 5
 //start questionTwo funciton
-function questionTwo() {
-var whichLang = prompt('What is my favorite programming language?');
-var userAnswer = ['javascript', 'python', 'java', 'c'];
-
-if (userAnswer.indexOf(whichLang) > -1) {
-
-  toScor += 1;
-  alert('You\'re on your way to tech greatness!');
-
-} else if (userAnswer.indexOf(whichLang) === -1) {
-  alert('Learn to code or stay in yesteryear!');
-  console.log('User score is ' + toScor + 'so far.');
-
-}
-// Question 6
-var answerOne = prompt('Do I own a Mac? (y or yes/n or no)').toLowerCase();
-var myAnswerOne = 'yes';
-var myAnswerTwo = 'y';
-
-if (answerOne === myAnswerOne || answerOne === myAnswerTwo) {
-
-  toScor += 1;
-  alert('Whoopee! that is correct.');
-
-
-} else {
-
-  alert('That\'s not correct, try again.');
-}
-// Question 7
-var corrNumb = 16;
-var countAtt = 0;
-
-while (countAtt < 4) {
-  countAtt++;
-  var userNumb = prompt('Select a number between 1 - 25 (you have 4 guesses).');
-
-  if (parseInt(userNumb) === corrNumb) {
-
-    toScor += 1;
-    alert('That\'s right!!!.');
-    break;
-
-  }
-  if (parseInt(userNumb) > corrNumb) {
-    alert('That\'s too high, try again.');
-
-  }
-  if (parseInt(userNumb) < corrNumb) {
-    alert('That\'s too low, try again.');
-
-  }
-  if (countAtt === 4) {
-    alert('Sorry that was the last guess.');
-  }
-}
-console.log(16);
-// Question 8
-var count = 0;
-var arr = ['florida', 'new jersey', 'hawaii', 'alaska', 'virginia', 'arizona'];
-
-while (count < 6) {
-  count++;
-  var userGuess = prompt('Name a State I have lived in besides Washington. You have 6 tries.');
-
-  if(userGuess === 'florida') {
-
-    toScor += 1;
-    for (i = 0; i < arr.length; i++)
-    alert(arr[i]);
-    break;
-
-  }if (userGuess === 'new jersey') {
-
-    toScor += 1;
-    for (i = 0; i < arr.length; i++)
-    alert(arr[i]);
-    break;
-
-  }if (userGuess === 'hawaii') {
-
-    toScor += 1;
-    for (i = 0; i < arr.length; i++)
-    alert(arr[i]);
-    break;
-
-  }if (userGuess === 'alaska') {
-
-    toScor += 1;
-    for (i = 0; i < arr.length; i++)
-    alert(arr[i]);
-    break;
-
-  }if (userGuess === 'virginia') {
-
-    toScor += 1;
-    for (i = 0; i < arr.length; i++)
-    alert(arr[i]);
-    break;
-
-  }
-  if (userGuess === 'arizona') {
-
-    toScor += 1;
-    for (i = 0; i < arr.length; i++)
-    alert(arr[i]);
-    break;
-
-  }if (count === 6) {
-    for (i = 0; i < arr.length; i++)
-    alert(arr[i]);
-  }
-}
-console.log(arr[i]);
-}
-//call questionTwo function
-questionTwo()
+// function questionTwo() {
+// var whichLang = prompt('What is my favorite programming language?');
+// var userAnswer = ['javascript', 'python', 'java', 'c'];
+//
+// if (userAnswer.indexOf(whichLang) > -1) {
+//
+//   toScor += 1;
+//   alert('You\'re on your way to tech greatness!');
+//
+// } else if (userAnswer.indexOf(whichLang) === -1) {
+//   alert('Learn to code or stay in yesteryear!');
+//   console.log('User score is ' + toScor + 'so far.');
+//
+// }
+// // Question 6
+// var answerOne = prompt('Do I own a Mac? (y or yes/n or no)').toLowerCase();
+// var myAnswerOne = 'yes';
+// var myAnswerTwo = 'y';
+//
+// if (answerOne === myAnswerOne || answerOne === myAnswerTwo) {
+//
+//   toScor += 1;
+//   alert('Whoopee! that is correct.');
+//
+//
+// } else {
+//
+//   alert('That\'s not correct, try again.');
+// }
+// // Question 7
+// var corrNumb = 16;
+// var countAtt = 0;
+//
+// while (countAtt < 4) {
+//   countAtt++;
+//   var userNumb = prompt('Select a number between 1 - 25 (you have 4 guesses).');
+//
+//   if (parseInt(userNumb) === corrNumb) {
+//
+//     toScor += 1;
+//     alert('That\'s right!!!.');
+//     break;
+//
+//   }
+//   if (parseInt(userNumb) > corrNumb) {
+//     alert('That\'s too high, try again.');
+//
+//   }
+//   if (parseInt(userNumb) < corrNumb) {
+//     alert('That\'s too low, try again.');
+//
+//   }
+//   if (countAtt === 4) {
+//     alert('Sorry that was the last guess.');
+//   }
+// }
+// console.log(16);
+// // Question 8
+// var count = 0;
+// var arr = ['florida', 'new jersey', 'hawaii', 'alaska', 'virginia', 'arizona'];
+//
+// while (count < 6) {
+//   count++;
+//   var userGuess = prompt('Name a State I have lived in besides Washington. You have 6 tries.');
+//
+//   if(userGuess === 'florida') {
+//
+//     toScor += 1;
+//     for (i = 0; i < arr.length; i++)
+//     alert(arr[i]);
+//     break;
+//
+//   }if (userGuess === 'new jersey') {
+//
+//     toScor += 1;
+//     for (i = 0; i < arr.length; i++)
+//     alert(arr[i]);
+//     break;
+//
+//   }if (userGuess === 'hawaii') {
+//
+//     toScor += 1;
+//     for (i = 0; i < arr.length; i++)
+//     alert(arr[i]);
+//     break;
+//
+//   }if (userGuess === 'alaska') {
+//
+//     toScor += 1;
+//     for (i = 0; i < arr.length; i++)
+//     alert(arr[i]);
+//     break;
+//
+//   }if (userGuess === 'virginia') {
+//
+//     toScor += 1;
+//     for (i = 0; i < arr.length; i++)
+//     alert(arr[i]);
+//     break;
+//
+//   }
+//   if (userGuess === 'arizona') {
+//
+//     toScor += 1;
+//     for (i = 0; i < arr.length; i++)
+//     alert(arr[i]);
+//     break;
+//
+//   }if (count === 6) {
+//     for (i = 0; i < arr.length; i++)
+//     alert(arr[i]);
+//   }
+// }
+// console.log(arr[i]);
+// }
+// //call questionTwo function
+// questionTwo()
 //Keep score and show user results
 if (toScor === 8) {
 
