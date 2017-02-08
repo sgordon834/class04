@@ -9,9 +9,9 @@
 
 //Question 1
 //start question1 function
-function question1() {
 var toScor = 0;
 var userName = prompt('what\'s is your name?');
+function question1() {
 
 alert('Hello ' + userName + '.  Thank you for visiting to my site!');
 
