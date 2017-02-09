@@ -122,10 +122,10 @@ function questionTwo() {
       alert('That\'s too low, try again.');
 
     }
-    // if (countAtt === 3) {
-    //   alert('This is your last attempt!');
-    //
-    // }
+    if (countAtt === 3) {
+      alert('This is your last attempt!');
+
+    }
     if (countAtt === 4) {
       alert('Sorry that was the last guess.');
     }
