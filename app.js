@@ -105,7 +105,7 @@ function questionTwo() {
 
   while (countAtt < 4) {
     countAtt++;
-    var userNumb = prompt('Select a number between 1 - 25 (you have 4 guesses).');
+    var userNumb = prompt('Select a number between 1 - 20 (you have 4 guesses).');
 
     if (parseInt(userNumb) === ranNum) {
 
